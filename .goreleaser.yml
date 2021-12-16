@@ -7,7 +7,7 @@ before:
     - make build-frontend
 
 builds:
-  - binary: listmonk
+  - binary: codingdeft-newsletter
     main: ./cmd
     goos:
       - windows
@@ -36,8 +36,8 @@ dockers:
     ids:
       - listmonk
     image_templates:
-      - "collegewap/listmonk:latest"
-      - "collegewap/listmonk:{{ .Tag }}"
+      - "collegewap/codingdeft-newsletter:latest"
+      - "collegewap/codingdeft-newsletter:{{ .Tag }}"
     dockerfile: Dockerfile
     extra_files:
       - config.toml.sample

@@ -31,15 +31,14 @@ archives:
       - README.md
       - LICENSE
 dockers:
-  -
-    goos: linux
+  - goos: linux
     goarch: amd64
     ids:
-    - listmonk
+      - listmonk
     image_templates:
-    - "collegewap/codingdeft-newsletter:latest"
-    - "collegewap/codingdeft-newsletter:{{ .Tag }}"
+      - "collegewap/listmonk:latest"
+      - "collegewap/listmonk:{{ .Tag }}"
     dockerfile: Dockerfile
     extra_files:
-    - config.toml.sample
-    - config-demo.toml
+      - config.toml.sample
+      - config-demo.toml

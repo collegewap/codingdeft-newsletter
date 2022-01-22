@@ -27,7 +27,7 @@ DO NOT use this demo setup in production.
 
 ```bash
 mkdir listmonk && cd listmonk
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/knadh/listmonk/master/install-prod.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/collegewap/codingdeft-newsletter/master/install-prod.sh)"
 ```
 Visit `http://localhost:9000`.
 

@@ -87,7 +87,7 @@ get_config() {
 
 get_containers() {
 	info "fetching docker-compose.yml from listmonk repo"
-	download https://raw.githubusercontent.com/knadh/listmonk/master/docker-compose.yml docker-compose.yml
+	download https://raw.githubusercontent.com/collegewap/codingdeft-newsletter/master/docker-compose.yml docker-compose.yml
 }
 
 modify_config(){

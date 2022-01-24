@@ -94,7 +94,6 @@
             {{ L.T "email.unsubHelp" }}
             <a href="{{ UnsubscribeURL }}" style="color: #888;">{{ L.T "email.unsub" }}</a>
         </p>
-        <p>Powered by <a href="https://listmonk.app" target="_blank" style="color: #888;">listmonk</a></p>
     </div>
     <div class="gutter" style="padding: 30px;">&nbsp;{{ TrackView }}</div>
 </body>

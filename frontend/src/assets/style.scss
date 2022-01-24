@@ -104,6 +104,10 @@ section {
   }
 }
 
+.is-disabled {
+  opacity: 0.30;
+}
+
 .box {
   background: $white;
   box-shadow: 2px 2px 0 #f3f3f3;
@@ -801,6 +805,10 @@ section.analytics {
   }
   .box {
     margin-bottom: 30px;
+  }
+  .html-editor {
+    height: auto;
+    min-height: 350px;
   }
 }
 

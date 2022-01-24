@@ -45,8 +45,10 @@ services:
     container_name: listmonk_app
     depends_on:
       - db
+    command: "./listmonk --static-dir=/listmonk/static"
     volumes:
       - ./config.toml:/listmonk/config.toml
+      - ./static:/listmonk/static
 
   demo-db:
     container_name: listmonk_demo_db
@@ -55,7 +57,12 @@ services:
   demo-app:
     <<: *app-defaults
     container_name: listmonk_demo_app
-    command: [sh, -c, "yes | ./listmonk --install --config config-demo.toml && ./listmonk --config config-demo.toml"]
+    command:
+      [
+        sh,
+        -c,
+        "yes | ./listmonk --install --config config-demo.toml && ./listmonk --config config-demo.toml",
+      ]
     depends_on:
       - demo-db
 
